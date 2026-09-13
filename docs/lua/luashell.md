@@ -38,12 +38,12 @@ return { ok = true }
 
 ```json
 {
-    "type": "luashell",
-    "state": 0,
-    "res": {
-        "ok": true
-    },
-    "print": "value\t42\ndone"
+  "type": "luashell",
+  "state": 0,
+  "res": {
+    "ok": true
+  },
+  "print": "value\t42\ndone"
 }
 ```
 
