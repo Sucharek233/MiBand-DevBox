@@ -45,6 +45,8 @@ Testers and contributors are welcome.
 ## Installation guide
 Refer to [this](https://www.youtube.com/watch?v=TCJuQgy0E74) video on how to install apps.
 
+**Mi Fitness mod is required for this to work!**
+
 You can download all apps in the [Releases](https://github.com/Sucharek233/MiBand-DevBox/releases) section.
 
 
