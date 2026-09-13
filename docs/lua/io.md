@@ -220,8 +220,7 @@ None
 ```json
 {
   "type": "io",
-  "state": 0,
-  "res": null
+  "state": 0
 }
 ```
 
