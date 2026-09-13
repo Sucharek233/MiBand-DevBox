@@ -98,3 +98,17 @@ return {
   "state": 0
 }
 ```
+
+## Extra functions
+
+### `getModule()`
+You can get different module functions using the `getModule()` functions. For example `this.router = getModule("system.router")` exposes the `system.router` module.
+
+Refer to [QuickApp docs](https://iot.mi.com/vela/quickapp/en/features) or [Other QuickApp docs](https://doc.quickapp.cn/features) for more information about these modules.
+
+### `runGC()`
+Runs garbage collection.
+
+
+## Application context
+App context is exposed at `aiot.appCtx`. Do whatever you want with this information :)

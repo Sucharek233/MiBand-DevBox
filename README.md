@@ -74,7 +74,7 @@ The Android app communicates with the QuickApp. QuickJS handles its own requests
 
 ## Screenshots
 <details>
-<summary>Show wearable app screenshots</summary>
+<summary>Wearable app screenshots</summary>
 
 ### QuickJS Quick App
 <img src="images/qjs.png" alt="QuickJS Quick App" width="220">
@@ -85,7 +85,7 @@ The Android app communicates with the QuickApp. QuickJS handles its own requests
 </details>
 
 <details>
-<summary>Show Android Dashboard screenshots</summary>
+<summary>Android Dashboard screenshots</summary>
 
 ### Dashboard
 <img src="images/android/dashboard/qjs.png" alt="QuickJS Dashboard" width="220">
@@ -103,7 +103,7 @@ The Android app communicates with the QuickApp. QuickJS handles its own requests
 </details>
 
 <details>
-<summary>Show Android Lua activity screenshots</summary>
+<summary>Android Lua activity screenshots</summary>
 
 ### Terminal and Lua shell
 <img src="images/android/lua/terminal.png" alt="Lua terminal" width="220">
@@ -131,7 +131,7 @@ The Android app communicates with the QuickApp. QuickJS handles its own requests
 </details>
 
 <details>
-<summary>Show Android QuickJS activity screenshots</summary>
+<summary>Android QuickJS activity screenshots</summary>
 
 ### JavaScript shell
 <img src="images/android/qjs/qjs-shell.png" alt="QuickJS shell" width="220">
@@ -176,7 +176,7 @@ GenAI was used quite a bit while making this (only code, not resources - all ico
 
 Since I don't know anything about Android developement, the Android app was 100% vibecoded. I initially steered it to make stuff my way, but overtime, I just let it do its thing. Just so you know, if you make an issue in the Android app repo, it'll be most likely fixed by genai.
 
-I didn't spend a single penny on this though :) I'm a freeloader or genai :)
+I didn't spend a single penny on this though :) I'm a freeloader of genai :)
 
 ## License
 This project is licensed under the GPL v3.0 license.
