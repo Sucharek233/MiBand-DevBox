@@ -1,7 +1,7 @@
 # MiBand DevBox
 
 <p align="center">
-	<img src="images/icon-1024.png" alt="MiBand DevBox icon" width="180">
+	<img src="images/icons/rounded/icon-1024.png" alt="MiBand DevBox icon" width="180">
 </p>
 
 <p align="center">
