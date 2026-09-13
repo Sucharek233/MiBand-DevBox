@@ -42,6 +42,12 @@ Testers and contributors are welcome.
 >
 > **Lua also has powerful shell and filesystem access. Do not delete, overwrite, or modify important system files, partitions, boot files, or runtime data unless you fully understand the consequences. An incorrect Lua command can make the wearable unbootable or permanently brick it. Test on an emulator or disposable device first, and keep backups whenever possible.**
 
+## Installation guide
+Refer to [this](https://www.youtube.com/watch?v=TCJuQgy0E74) video on how to install apps.
+
+You can download all apps in the [Releases](https://github.com/Sucharek233/MiBand-DevBox/releases) section.
+
+
 ## Project Components
 MiBand DevBox consists of three open-source applications working together:
 
