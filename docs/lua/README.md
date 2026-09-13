@@ -5,7 +5,7 @@ This section documents activities implemented on or backed by the Lua runtime.
 | Activity | Type | Purpose | Documentation |
 | :--- | :--- | :--- | :--- |
 | Apps | `apps` | Manages application lists, manifests, metadata, icons, and app launching | [`apps.md`](./apps.md) |
-| Command | `cmd` | Executes shell commands and returns captured output and exit codes | [`cmd.md`](./cmd.md) |
+| Terminal | `cmd` | Executes shell commands and returns captured output and exit codes | [`cmd.md`](./cmd.md) |
 | I/O | `io` | Lists and modifies files and streams file contents in chunks | [`io.md`](./io.md) |
 | Lua Shell | `luashell` | Executes Lua code and returns sanitized results and captured `print` output | [`luashell.md`](./luashell.md) |
 | Ping | `ping` | Checks QuickJS/Lua communication and returns timing information | [`ping.md`](./ping.md) |
