@@ -36,6 +36,10 @@ Once running, you can connect with any WebSocket client.
 | **QuickJS** | Core System & IPC | • Android-to-band message routing<br>• Core app logic | [`/qjs`](./qjs/README.md) |
 | **Lua** | Feature Extension | • Extra functions<br>• Shell and unrestricted filesystem access | [`/lua`](./lua/README.md) |
 
+> [!CAUTION]
+> ## Disclaimer
+> **Lua service traffic passed to QuickJS is written to flash storage, including requests, streams, and responses. Frequent use can increase flash wear. Lua also has shell and filesystem access: do not modify or delete important system files or runtime data, since a mistake can leave the wearable unbootable or brick it.**
+
 ## Message Format
 All messages transmitted between the Android companion app and the band use a single structure.
 

@@ -1,6 +1,12 @@
 # Lua Activities
 This section documents activities implemented on or backed by the Lua runtime.
 
+> [!CAUTION]
+> ## Disclaimer
+> **Every request, stream, and response passed from the Lua service to QuickJS is written to flash storage, not only to RAM. Frequent or continuous activity can increase flash wear and reduce storage lifetime.**
+>
+> **Lua has shell and unrestricted filesystem access. Never delete, overwrite, or modify important system files or runtime data without understanding the consequences. A careless command can make the wearable unbootable or brick it. Test changes on the Vela emulator or a disposable device first.**
+
 ## Activity Overview
 | Activity | Type | Purpose | Documentation |
 | :--- | :--- | :--- | :--- |

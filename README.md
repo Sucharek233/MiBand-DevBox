@@ -36,6 +36,12 @@ Testers and contributors are welcome.
 - Measures communication between the Android, QuickJS, and Lua layers
 - Provides small development utilities such as garbage collection
 
+> [!CAUTION]
+> ## Lua service safety
+> **Every request, stream, and response that the Lua service hands over to QuickJS is written to flash storage rather than kept only in RAM due to QuickApp limitations. Heavy or continuous Lua activity can therefore increase flash wear and reduce storage lifetime.**
+>
+> **Lua also has powerful shell and filesystem access. Do not delete, overwrite, or modify important system files, partitions, boot files, or runtime data unless you fully understand the consequences. An incorrect Lua command can make the wearable unbootable or permanently brick it. Test on an emulator or disposable device first, and keep backups whenever possible.**
+
 ## Project Components
 MiBand DevBox consists of three open-source applications working together:
 
