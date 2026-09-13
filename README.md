@@ -91,45 +91,58 @@ The Android app communicates with the QuickApp. QuickJS handles its own requests
 <img src="images/android/dashboard/qjs.png" alt="QuickJS Dashboard" width="220">
 <img src="images/android/dashboard/lua.png" alt="Lua Dashboard" width="220">
 
+### Pings
+<img src="images/android/mgmt/ping/qjs.png" alt="QuickJS ping results" width="220">
+<img src="images/android/mgmt/ping/lua.png" alt="Lua ping results" width="220">
+
 ### Management
 <img src="images/android/mgmt/logs.png" alt="System logs" width="220">
 <img src="images/android/mgmt/websocketapi.png" alt="WebSocket API" width="220">
 
-### Pings
-<img src="images/android/mgmt/ping/qjs.png" alt="QuickJS ping results" width="220">
-<img src="images/android/mgmt/ping/lua.png" alt="Lua ping results" width="220">
 
 </details>
 
 <details>
 <summary>Show Android Lua activity screenshots</summary>
 
+### Terminal and Lua shell
+<img src="images/android/lua/terminal.png" alt="Lua terminal" width="220">
+<img src="images/android/lua/lua-shell.png" alt="Lua shell" width="220">
+
+### Device information
+<img src="images/android/lua/device-info/system.png" alt="Lua system information" width="220">
+<img src="images/android/lua/device-info/partitions.png" alt="Lua partitions" width="220">
+<img src="images/android/lua/device-info/props.png" alt="Lua system properties" width="220">
+
+### File manager
+<img src="images/android/lua/file-manager/list.png" alt="Lua file manager" width="220">
+<img src="images/android/lua/file-manager/streaming.png" alt="Lua file manager" width="220">
+
+### Sensors
+<img src="images/android/lua/sensors/list.png" alt="Lua sensor list" width="220">
+<img src="images/android/lua/sensors/all.png" alt="Lua sensor list" width="220">
+<img src="images/android/lua/sensors/compass.png" alt="Lua compass sensor" width="220">
+
 ### Apps
 <img src="images/android/lua/apps/list.png" alt="Lua apps list" width="220">
 <img src="images/android/lua/apps/details.png" alt="Lua app details" width="220">
 <img src="images/android/lua/apps/manifest.png" alt="Lua app manifest" width="220">
-
-### Device information
-<img src="images/android/lua/device-info/system.png" alt="Lua system information" width="220">
-<img src="images/android/lua/device-info/props.png" alt="Lua system properties" width="220">
-<img src="images/android/lua/device-info/partitions.png" alt="Lua partitions" width="220">
-
-### Other Lua tools
-<img src="images/android/lua/file-manager.png" alt="Lua file manager" width="220">
-<img src="images/android/lua/lua-shell.png" alt="Lua shell" width="220">
-<img src="images/android/lua/terminal.png" alt="Lua terminal" width="220">
-<img src="images/android/lua/sensors/list.png" alt="Lua sensor list" width="220">
-<img src="images/android/lua/sensors/compass.png" alt="Lua compass sensor" width="220">
 
 </details>
 
 <details>
 <summary>Show Android QuickJS activity screenshots</summary>
 
-### QuickJS tools
+### JavaScript shell
 <img src="images/android/qjs/qjs-shell.png" alt="QuickJS shell" width="220">
+
+### Module Compatibility
 <img src="images/android/qjs/modules.png" alt="QuickJS modules" width="220">
+
+### Device information
 <img src="images/android/qjs/device-info.png" alt="QuickJS device information" width="220">
+
+### Sensors
 <img src="images/android/qjs/sensors/list.png" alt="QuickJS sensor list" width="220">
 <img src="images/android/qjs/sensors/accel.png" alt="QuickJS accelerometer" width="220">
 
@@ -161,7 +174,7 @@ When reporting an issue, include the device or emulator, firmware version, compo
 ## Use of AI in this project
 GenAI was used quite a bit while making this (only code, not resources - all icons and images were made by me). It recommended features, improved structure, drafted READMEs etc.
 
-The Android app was 100% vibecoded. I initially steered it to make stuff my way, but overtime, I just let it do its thing. Just so you know, if you make an issue in the Android app repo, it'll be most likely fixed by genai.
+Since I don't know anything about Android developement, the Android app was 100% vibecoded. I initially steered it to make stuff my way, but overtime, I just let it do its thing. Just so you know, if you make an issue in the Android app repo, it'll be most likely fixed by genai.
 
 I didn't spend a single penny on this though :) I'm a freeloader or genai :)
 
