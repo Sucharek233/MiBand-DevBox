@@ -29,7 +29,7 @@ None
 ```json
 {
   "type": "apps",
-  "state": 0
-  "res": "Ok",
+  "state": 0,
+  "res": "Ok"
 }
 ```
