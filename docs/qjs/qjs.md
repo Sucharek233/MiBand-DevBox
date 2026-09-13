@@ -54,5 +54,47 @@ If received code is invalid, it'll get caught and the error will get returned.
 }
 ```
 
-## Special return types
-TODO
+## Return Value Sanitization
+
+The result of the JavaScript code is converted to a JSON-safe value before it is returned. The serialized value is placed in `res`, so `res` is always a JSON string rather than a native response object.
+
+The same conversion is applied to each argument passed to `console.log`. The resulting serialized arguments are joined with a space and stored as one entry in the `logs` array.
+
+| JavaScript value | Sanitized value |
+| --- | --- |
+| `function` | `{ "$": "fn" }` |
+| `undefined` | `{ "$": "undef" }` |
+| `NaN` | `{ "$": "nan" }` |
+| `Infinity` | `{ "$": "inf" }` |
+| `-Infinity` | `{ "$": "ninf" }` |
+| `null` | `{ "$": "null" }` |
+| String longer than 1024 characters | First 1024 characters followed by `...` |
+| Circular object reference | `{ "$": "ref", "to": "<path>" }` |
+
+Finite numbers, booleans, and strings within the length limit retain their values. Objects are converted to JSON objects and arrays remain arrays. Object keys are converted to strings, including symbol keys. If reading a property throws, that property is represented as `{ "$": "err", "message": "..." }`.
+
+### Example
+
+```js
+const value = {};
+value.self = value;
+
+console.log(undefined, null, NaN, Infinity);
+return {
+  callback: () => {},
+  missing: undefined,
+  negativeInfinity: -Infinity,
+  self: value
+};
+```
+
+```json
+{
+  "type": "qjs",
+  "res": "{\"callback\":{\"$\":\"fn\"},\"missing\":{\"$\":\"undef\"},\"negativeInfinity\":{\"$\":\"ninf\"},\"self\":{\"self\":{\"$\":\"ref\",\"to\":\"root.self\"}}}",
+  "logs": [
+    "{\"$\":\"undef\"} {\"$\":\"null\"} {\"$\":\"nan\"} {\"$\":\"inf\"}"
+  ],
+  "state": 0
+}
+```
